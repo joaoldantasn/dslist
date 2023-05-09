@@ -15,7 +15,7 @@ public class Game {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	private String title;
 	/*costomizando o nome da coluna pois year ja é uma palavra reservada do bd*/
@@ -35,7 +35,7 @@ public class Game {
 		
 	}
 
-	public Game(long id, String title, Integer year, String genre, String platforms, String imgUrl,
+	public Game(Long id, String title, Integer year, String genre, String platforms, String imgUrl,
 			String shortDescription, String longDescription, Double score) {
 		this.id = id;
 		this.title = title;
@@ -52,7 +52,7 @@ public class Game {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
