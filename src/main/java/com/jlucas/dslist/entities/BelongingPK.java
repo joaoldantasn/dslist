@@ -7,7 +7,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 
-@Embeddable
+@Embeddable 
 public class BelongingPK {
 	
 	@ManyToOne
